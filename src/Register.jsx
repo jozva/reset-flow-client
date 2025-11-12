@@ -51,7 +51,7 @@ function Register() {
             <div className="py-30 grid grid-cols-3">
                 <div className="col-span-2 grid grid-cols-2 border-1 mx-10 rounded-xl bg-[#E5E5E5]">
                     <div className="mx-[50px] py-40">
-                        <img src="src/assets/illustration.png" alt="Home" className="h-100 w-120 " />
+                        <img src="https://raw.githubusercontent.com/jozva/reset-flow-client/refs/heads/main/src/assets/illustration.png" alt="Home" className="h-100 w-120 " />
                     </div>
                     <div className=" m-10 ">
                         <div className="bg-white my-auto  rounded-lg p-5 ">
@@ -60,7 +60,7 @@ function Register() {
                             <div className="mt-15">
                                 <form action="" onSubmit={formik.handleSubmit}>
                                     <div className="flex border-1 p-1 rounded">
-                                        <img src="src/assets/user.png" alt="" className="p-2 h-[43px] w-[43px]" />
+                                        <img src="https://raw.githubusercontent.com/jozva/reset-flow-client/refs/heads/main/src/assets/user.png" alt="" className="p-2 h-[43px] w-[43px]" />
                                         <input type="text"
                                             name="username"
                                             value={formik.values.username}
@@ -70,7 +70,7 @@ function Register() {
                                     </div>
                                     <p className="text-[#FF0000]">{formik.errors.username}</p>
                                     <div className="flex border-1 mt-5 p-1 rounded">
-                                        <img src="src/assets/email.png" alt="" className="p-2 h-[43px] w-[50px]" />
+                                        <img src="https://raw.githubusercontent.com/jozva/reset-flow-client/refs/heads/main/src/assets/email.png" alt="" className="p-2 h-[43px] w-[50px]" />
                                         <input type="text"
                                             className="w-full p-1 border-none focus:outline-none focus:ring-0"
                                             placeholder="Enter your email"
@@ -80,7 +80,7 @@ function Register() {
                                     </div>
                                     <span className="text-[#FF0000]">{formik.errors.email}</span>
                                     <div className="flex border-1 mt-5 p-1 rounded">
-                                        <img src="src/assets/lock.png" alt="" className="p-2 h-[43px] w-[43px]" />
+                                        <img src="https://raw.githubusercontent.com/jozva/reset-flow-client/refs/heads/main/src/assets/lock.png" alt="" className="p-2 h-[43px] w-[43px]" />
                                         <input type="text"
                                             className="w-full p-1 border-none focus:outline-none focus:ring-0"
                                             placeholder="Enter your password"
@@ -92,7 +92,7 @@ function Register() {
                                     <span className="text-[#FF0000]">{formik.errors.password}</span>
 
                                     <div className="flex border-1 mt-5 p-1 rounded">
-                                        <img src="src/assets/password.png" alt="" className="p-2 h-[43px] w-[43px]" />
+                                        <img src="https://raw.githubusercontent.com/jozva/reset-flow-client/refs/heads/main/src/assets/password.png" alt="" className="p-2 h-[43px] w-[43px]" />
                                         <input type="password"
                                             className="w-full p-1 border-none focus:outline-none focus:ring-0"
                                             placeholder="Re-enter your password"

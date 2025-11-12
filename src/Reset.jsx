@@ -53,7 +53,7 @@ function ResetPassword() {
         {/* Left Side */}
         <div className="flex justify-center items-center p-10 bg-white">
           <img
-            src="src/assets/illustration.png"
+            src="https://raw.githubusercontent.com/jozva/reset-flow-client/refs/heads/main/src/assets/illustration.png"
             alt="Reset Illustration"
             className="w-[350px]"
           />
@@ -70,7 +70,7 @@ function ResetPassword() {
             {/* Email */}
             <div>
               <div className="flex items-center border rounded-lg p-2 bg-white">
-                <img src="src/assets/email.png" alt="" className="h-6 w-6 mr-2" />
+                <img src="https://raw.githubusercontent.com/jozva/reset-flow-client/refs/heads/main/src/assets/email.png" alt="" className="h-6 w-6 mr-2" />
                 <input
                   type="email"
                   name="email"
@@ -88,7 +88,7 @@ function ResetPassword() {
             {/* New Password */}
             <div>
               <div className="flex items-center border rounded-lg p-2 bg-white">
-                <img src="src/assets/lock.png" alt="" className="h-6 w-6 mr-2" />
+                <img src="https://raw.githubusercontent.com/jozva/reset-flow-client/refs/heads/main/src/assets/lock.png" alt="" className="h-6 w-6 mr-2" />
                 <input
                   type="password"
                   name="newPassword"
@@ -107,7 +107,7 @@ function ResetPassword() {
             {/* Confirm Password */}
             <div>
               <div className="flex items-center border rounded-lg p-2 bg-white">
-                <img src="src/assets/password.png" alt="" className="h-6 w-6 mr-2" />
+                <img src="https://raw.githubusercontent.com/jozva/reset-flow-client/refs/heads/main/src/assets/password.png" alt="" className="h-6 w-6 mr-2" />
                 <input
                   type="password"
                   name="cnfPassword"

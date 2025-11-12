@@ -39,7 +39,7 @@ function Login() {
                 </div>
                 <div className="col-span-2 grid grid-cols-2 border-1 mx-10 rounded-xl bg-[#E5E5E5]">
                     <div className="mx-[50px] py-40">
-                        <img src="src/assets/illustration.png" alt="Home" className="h-100 w-120 " />
+                        <img src="https://raw.githubusercontent.com/jozva/reset-flow-client/refs/heads/main/src/assets/illustration.png" alt="Home" className="h-100 w-120 " />
                     </div>
                     <div className=" m-10 ">
                         <div className="bg-white my-auto h-full rounded-lg p-5 ">
@@ -49,12 +49,12 @@ function Login() {
                                 <form action="" onSubmit={formik.handleSubmit}>
 
                                     <div className="flex border-1 p-1 rounded">
-                                        <img src="src/assets/email.png" alt="" className="p-2" />
+                                        <img src="https://raw.githubusercontent.com/jozva/reset-flow-client/refs/heads/main/src/assets/email.png" alt="" className="p-2" />
                                         <input type="text" className="w-full p-1 border-none focus:outline-none focus:ring-0" placeholder="Enter your email" name="email" value={formik.values.email} onChange={formik.handleChange} />
                                     </div>
                                     <span className="text-[#FF0000]">{formik.errors.email}</span>
                                     <div className="flex border-1 mt-5 p-1 rounded">
-                                        <img src="src/assets/password.png" alt="" className="p-2" />
+                                        <img src="https://raw.githubusercontent.com/jozva/reset-flow-client/refs/heads/main/src/assets/password.png" alt="" className="p-2" />
                                         <input name="password" value={formik.values.password} onChange={formik.handleChange} type="password" className="w-full p-1 border-none focus:outline-none focus:ring-0" placeholder="Enter your password" />
                                     </div>
                                     <span className="text-[#FF0000]">{formik.errors.password}</span>
