@@ -5,7 +5,7 @@ import { useFormik } from "formik";
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 
-function Forgot() {
+function Forget() {
   const [showOtpBox, setShowOtpBox] = useState(false);
   const navigate = useNavigate(); 
 
@@ -25,7 +25,7 @@ function Forgot() {
     onSubmit: async (values) => {
       try {
         if (!showOtpBox) {
-          const response = await axios.post("https://reset-flow-cmgs.onrender.com/user/forget", {
+          const response = await axios.post("https://reset-flow-server.onrender.com/user/forget", {
             email: values.email,
           });
           alert("OTP sent successfully to your email!");
@@ -34,7 +34,7 @@ function Forgot() {
           }
         }
         else {
-          const response = await axios.post("https://reset-flow-cmgs.onrender.com/user/forget", {
+          const response = await axios.post("https://reset-flow-server.onrender.com/user/forget", {
             email: values.email,
             otp: values.otp,
           });
@@ -117,7 +117,7 @@ function Forgot() {
   );
 }
 
-export default Forgot;
+export default Forget;
 
 
 

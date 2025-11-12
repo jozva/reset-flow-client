@@ -33,7 +33,7 @@ function ResetPassword() {
     },
     onSubmit: async (values) => {
       try {
-        await axios.post("https://reset-flow-cmgs.onrender.com/user/reset", values)
+        await axios.post("https://reset-flow-server.onrender.com/user/reset", values)
         alert("Password reset successfully!")
         formik.resetForm()
       } catch (error) {
@@ -141,7 +141,7 @@ function ResetPassword() {
 
             {showAuth &&(<p className="text-center text-gray-700">
               Click to {" "}
-              <Link to="/forgot" className="text-[#5A55E3] font-semibold hover:underline">
+              <Link to="/forget" className="text-[#5A55E3] font-semibold hover:underline">
                 Authorization
               </Link>
             </p>)}

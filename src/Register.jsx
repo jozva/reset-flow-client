@@ -36,7 +36,7 @@ function Register() {
         },
         onSubmit: async (values) => {
             try {
-                await axios.post("https://reset-flow-cmgs.onrender.com/user/register" , values)
+                await axios.post("https://reset-flow-server.onrender.com/user/register" , values)
                 formik.resetForm()
                 
             } catch (error) {

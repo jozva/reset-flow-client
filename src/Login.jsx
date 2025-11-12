@@ -21,7 +21,7 @@ function Login() {
         },
         onSubmit: async (values) => {
             try {
-                await axios.post("https://reset-flow-cmgs.onrender.com/user/login", values)
+                await axios.post("https://reset-flow-server.onrender.com/user/login", values)
                 formik.resetForm()
                 alert("Login success")
             } catch (error) {
@@ -58,7 +58,7 @@ function Login() {
                                         <input name="password" value={formik.values.password} onChange={formik.handleChange} type="password" className="w-full p-1 border-none focus:outline-none focus:ring-0" placeholder="Enter your password" />
                                     </div>
                                     <span className="text-[#FF0000]">{formik.errors.password}</span>
-                                    <p className="my-5 text-right text-indigo-500 cursor-pointer"> <Link to={"/forgot"}>Forgot Password</Link></p>
+                                    <p className="my-5 text-right text-indigo-500 cursor-pointer"> <Link to={"/forget"}>Forgot Password</Link></p>
                                     <input className="cursor-pointer border-1 p-2 px-15 rounded-[5px] block mx-auto" type="submit" />
                                     <p className="text-center mt-10">Don’t have an account? <span className="text-[#5A55E3] cursor-pointer"><Link to={"/register"}>Register</Link></span></p>
 
