@@ -21,7 +21,7 @@ function Login() {
         },
         onSubmit: async (values) => {
             try {
-                await axios.post("https://reset-flow-server.onrender.com/user/login", values)
+                await axios.post("http://localhost:8000/user/login", values)
                 formik.resetForm()
                 alert("Login success")
             } catch (error) {

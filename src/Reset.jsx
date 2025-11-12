@@ -33,7 +33,7 @@ function ResetPassword() {
     },
     onSubmit: async (values) => {
       try {
-        await axios.post("https://reset-flow-server.onrender.com/user/reset", values)
+        await axios.post("http://localhost:8000/user/reset", values)
         alert("Password reset successfully!")
         formik.resetForm()
       } catch (error) {
