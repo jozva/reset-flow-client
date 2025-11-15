@@ -25,7 +25,7 @@ function Forget() {
     onSubmit: async (values) => {
       try {
         if (!showOtpBox) {
-          const response = await axios.post("http://localhost:8000/user/forget", {
+          const response = await axios.post("https://reset-flow-server.onrender.com/user/forget", {
             email: values.email,
           });
           alert("OTP sent successfully to your email!");
@@ -34,7 +34,7 @@ function Forget() {
           }
         }
         else {
-          const response = await axios.post("http://localhost:8000/user/forget", {
+          const response = await axios.post("https://reset-flow-server.onrender.com/user/forget", {
             email: values.email,
             otp: values.otp,
           });
